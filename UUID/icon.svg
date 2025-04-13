@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4285f4" />
+      <stop offset="100%" stop-color="#0d47a1" />
+    </linearGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="512" height="512" rx="80" fill="url(#bg-gradient)" />
+
+  <!-- 六边形图案组 -->
+  <g transform="translate(256,256)">
+    <!-- 中心六边形 -->
+    <path d="M0,-120 L104,-60 L104,60 L0,120 L-104,60 L-104,-60 Z" 
+          fill="none" stroke="white" stroke-width="12" opacity="0.9" />
+    
+    <!-- 外层装饰六边形 -->
+    <path d="M0,-160 L138.5,-80 L138.5,80 L0,160 L-138.5,80 L-138.5,-80 Z" 
+          fill="none" stroke="white" stroke-width="6" opacity="0.4" 
+          stroke-dasharray="20,10" />
+
+    <!-- 内层装饰六边形 -->
+    <path d="M0,-80 L69.25,-40 L69.25,40 L0,80 L-69.25,40 L-69.25,-40 Z" 
+          fill="none" stroke="white" stroke-width="8" opacity="0.6" />
+
+    <!-- 中心点 -->
+    <circle cx="0" cy="0" r="15" fill="white" opacity="0.9" />
+
+    <!-- 连接线 -->
+    <g stroke="white" stroke-width="4" opacity="0.7">
+      <line x1="0" y1="-80" x2="0" y2="-120" />
+      <line x1="69.25" y1="-40" x2="104" y2="-60" />
+      <line x1="69.25" y1="40" x2="104" y2="60" />
+      <line x1="0" y1="80" x2="0" y2="120" />
+      <line x1="-69.25" y1="40" x2="-104" y2="60" />
+      <line x1="-69.25" y1="-40" x2="-104" y2="-60" />
+    </g>
+  </g>
+
+  <!-- UUID文字 -->
+  <text x="256" y="420" 
+        font-family="Arial, sans-serif" 
+        font-size="64" 
+        font-weight="bold" 
+        text-anchor="middle" 
+        fill="white"
+        style="letter-spacing: 2px">
+    UUID
+  </text>
+</svg>

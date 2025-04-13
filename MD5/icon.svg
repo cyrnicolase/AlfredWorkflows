@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- 渐变背景 -->
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90E2"/>
+      <stop offset="100%" style="stop-color:#357ABD"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景圆角矩形 -->
+  <rect width="512" height="512" rx="60" ry="60" fill="url(#bg)"/>
+  
+  <!-- MD5文字 -->
+  <text x="256" y="280" font-family="Arial, sans-serif" font-weight="bold" font-size="140" fill="white" text-anchor="middle" dominant-baseline="middle">MD5</text>
+  
+  <!-- 装饰线条 -->
+  <path d="M156 340 L356 340" stroke="white" stroke-width="8" stroke-linecap="round" opacity="0.6"/>
+</svg>

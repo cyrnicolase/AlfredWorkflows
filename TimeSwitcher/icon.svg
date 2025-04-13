@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90E2"/>
+      <stop offset="100%" style="stop-color:#1B4F90"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect x="56" y="56" width="400" height="400" rx="80" fill="url(#bgGradient)"/>
+  
+  <!-- 时钟外圈 -->
+  <circle cx="256" cy="236" r="140" fill="none" stroke="white" stroke-width="16"/>
+  
+  <!-- 主要刻度 -->
+  <line x1="256" y1="116" x2="256" y2="136" stroke="white" stroke-width="8" stroke-linecap="round"/>
+  <line x1="376" y1="236" x2="356" y2="236" stroke="white" stroke-width="8" stroke-linecap="round"/>
+  <line x1="256" y1="356" x2="256" y2="336" stroke="white" stroke-width="8" stroke-linecap="round"/>
+  <line x1="136" y1="236" x2="156" y2="236" stroke="white" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- 时钟指针 -->
+  <line x1="256" y1="236" x2="256" y2="146" stroke="white" stroke-width="12" stroke-linecap="round" transform="rotate(45 256 236)"/>
+  <line x1="256" y1="236" x2="256" y2="126" stroke="white" stroke-width="8" stroke-linecap="round" transform="rotate(240 256 236)"/>
+  
+  <!-- 中心点 -->
+  <circle cx="256" cy="236" r="12" fill="white"/>
+  
+  <!-- 转换箭头 -->
+  <g transform="translate(256, 380)">
+    <path d="M-30,0 A30,30 0 0,1 30,0" stroke="white" stroke-width="12" fill="none" stroke-linecap="round"/>
+    <path d="M30,-10 L30,10 L40,0 Z" fill="white"/>
+    <path d="M30,0 A30,30 0 0,1 -30,0" stroke="white" stroke-width="12" fill="none" stroke-linecap="round" transform="translate(0, -20)"/>
+    <path d="M-30,-10 L-30,10 L-40,0 Z" fill="white" transform="translate(0, -20)"/>
+  </g>
+</svg>
